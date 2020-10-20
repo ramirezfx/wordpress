@@ -1,8 +1,8 @@
 FROM ubuntu:latest
-ARG sitename=test.test
-ARG WPDB=speedypreneur
-ARG WPUSER=speedypreneur
-ARG WPPWD=53C8d8btGeDN
+ARG sitename=
+ARG WPDB=
+ARG WPUSER=
+ARG WPPWD=
 
 COPY ./keyboard /etc/default/keyboard
 COPY resources/createdatabase.sql /tmp
