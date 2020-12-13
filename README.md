@@ -1,12 +1,10 @@
 # wordpress
 Get The file with
-wget https://github.com/ramirezfx/wordpress/archive/main.zip
+git clone https://github.com/ramirezfx/wordpress.git
 
-Uncompress the file
-unzip main.zip
 
 Navigate To The Working-Directory:
-cd wordpress-main
+cd wordpress
 
 Change The File docker-compose.yaml to your needs (DB-NAME, DW-PWD,...)
 
