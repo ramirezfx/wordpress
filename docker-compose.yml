@@ -1,0 +1,32 @@
+version: '3.3'
+
+services:
+   db:
+     image: mysql:latest
+     volumes:
+       - db:/var/lib/mysql
+     restart: always
+     environment:
+       MYSQL_ROOT_PASSWORD: ${MYSQL_ROOT_PASSWORD}
+       MYSQL_DATABASE: ${MYSQL_DATABASE}
+       MYSQL_USER: ${MYSQL_USER}
+       MYSQL_PASSWORD: ${MYSQL_PASSWORD}
+
+   wp:
+     depends_on:
+       - db
+     image: wordpress:latest
+     volumes:
+       - wp:/var/www/html
+       - ./uploads.ini:/usr/local/etc/php/conf.d/uploads.ini
+     ports:
+       - ${PORTMAPPING}
+     restart: always
+     environment:
+       WORDPRESS_DB_HOST: ${MYSQL_HOST}
+       WORDPRESS_DB_USER: ${MYSQL_USER}
+       WORDPRESS_DB_PASSWORD: ${MYSQL_PASSWORD}
+       WORDPRESS_DB_NAME: ${MYSQL_DATABASE}
+volumes:
+    db: {}
+    wp: {}
