@@ -23,5 +23,7 @@ Copy the backup into the container:
 docker cp {BACKUPFILE} {WP-CONTAINER}:/var/www/html/wp-content/ai1wm-backups
 
 Change the correct permissions:
+
 docker exec -it {WP-CONTAINER} chown www-data /var/www/html/wp-content/ai1wm-backups/{BACKUPFILE}
+
 docker exec -it {WP-CONTAINER} chgrp www-data /var/www/html/wp-content/ai1wm-backups/{BACKUPFILE}
