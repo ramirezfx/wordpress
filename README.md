@@ -22,7 +22,7 @@ Point Your Browser To http://localhost:port (8080 by default) and start the inst
 If you use all-in-one-wp-migration, you can use this procedure to restore:
 Download and install the plugin:
 
-https://freestuff.digital/wp-content/uploads/2020/07/all-in-one-wp-migration.6.77.zip
+https://drive.google.com/file/d/1hfHc6pFAaKi43QRYifV-LFteBiYew6bp/view?usp=sharing
 
 Copy the backup into the container:
 
