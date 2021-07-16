@@ -24,6 +24,10 @@ Download and install the plugin:
 
 https://drive.google.com/file/d/1hfHc6pFAaKi43QRYifV-LFteBiYew6bp/view?usp=sharing
 
+Check This Video to eliminate the max-upload-limit:
+
+`https://www.youtube.com/watch?v=4TvZPXBUV2g`
+
 Copy the backup into the container:
 
 `docker cp {BACKUPFILE} {WP-CONTAINER}:/var/www/html/wp-content/ai1wm-backups`
